@@ -1,0 +1,77 @@
+<%- include('partials/header') %>
+<div class="container setfont" > 
+    <div style="text-align: center; color: chartreuse" class="">
+            <h3 style="text-align: center;">Join Legal Square   </h2>
+            <hr class="fancy-line-3">
+    </div>
+
+<form action="/register" method="post" style="color: #ccc;">
+    <center>
+        <div class="form-group " >
+            <label class="col-md-8 control-label ml-5" style="text-align: left;">Name (First + Last) (Shubham More)</label>
+            <div class="col-md-8 inputGroupContainer">
+               <div class="input-group" >
+                   <span class="input-group-addon">
+                       <span class="material-icons mr-2 mr-2" style="font-size:34px;">person</span>
+                    </span>
+                    <input name="name" placeholder="Name (e.g. Shubham More)" class="form-control" required="true"  type="text">
+                </div>
+            </div>
+         </div> 
+         <div class="form-group ">
+            <label class="col-md-8 control-label ml-5" style="text-align: left;">Username</label>
+            <div class="col-md-8 inputGroupContainer">
+               <div class="input-group" ><span class="input-group-addon">
+                   <span class="material-icons mr-2 mr2" style="font-size:34px;">person_add</span>
+                </span>
+                <input name="username"  class="form-control" placeholder=" (e.g. Shubhzz25)" required="true" type="text" ></div>
+            </div>
+         </div>
+         <div class="form-group ">
+            <label class="col-md-8 control-label ml-5" style="text-align:left;">Password</label>
+            <div class="col-md-8 inputGroupContainer">
+               <div class="input-group" >
+                   <span class="input-group-addon"><span class="material-icons mr-2" style="font-size:34px;">lock</span></span>
+                   <input  name="password" placeholder="8 characters Long" class="form-control" required="true"  type="password">
+                </div>
+            </div>
+         </div>
+         <div class="form-group ">
+            <label class="col-md-8 control-label ml-5" style="text-align: left;">Email</label>
+            <div class="col-md-8 inputGroupContainer">
+               <div class="input-group" >
+                   <span class="input-group-addon"><span class="material-icons mr-2" style="font-size:34px;">alternate_email</span></span>
+                   <input name="email" placeholder="ssmore161@gmail.com" class="form-control"   type="email">
+                </div>
+            </div>
+         </div>
+         <div class="form-group ">
+            <label class="col-md-8 control-label ml-5" style="text-align: left;">Mobile</label>
+            <div class="col-md-8 inputGroupContainer">
+               <div class="input-group" >
+                   <span class="input-group-addon"><span class="material-icons mr-2" style="font-size:34px;">call</span></span>
+                   <input  name="mobile" placeholder="7020958418" class="form-control" required="true"> 
+                </div>
+            </div>
+         </div>
+         <div class="form-group " >
+            <label class="col-md-8  control-label ml-5" style="text-align: left;">Current Location</label>
+            <div class="col-md-8 inputGroupContainer">
+               <div class="input-group" >
+                   <span class="input-group-addon"><span class="material-icons mr-2" style="font-size:34px;">location_on</span></span>
+                   <input name="location" placeholder="Pune" class="form-control"  type="text">
+                </div>
+            </div>
+         </div>
+         <!-- <div class="form-group ">
+            <label class="col-md-8  control-label ml-5" style="text-align: left;">Outcome of Event</label>
+            <div class="col-md-8 inputGroupContainer">
+               <div class="input-group" ><span class="input-group-addon"><span class="material-icons mr-2" style="font-size:34px;">emoji_events</span></span><input name="pastlist[result]" placeholder="Results...??" class="form-control" required="true"  type="text"></div>
+            </div>
+         </div> -->
+         <button type="submit" class="btn btn-primary mb-2">Join Legal Square</button>
+        </center>
+
+</form>
+</div>
+<%- include('partials/footer') %>

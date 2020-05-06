@@ -1,0 +1,415 @@
+body{
+	/*background-color: #2e4045;*/
+	background-color: #000;
+}
+.setfont{
+font-family: 'Bree Serif', serif;
+}
+/*
+img{
+	height: 80%;
+}*/
+nav{
+	box-shadow: 0 0 10px #000;
+	font-family: 'Bree Serif', serif;
+	font-size: 1.5rem;
+}
+.content{
+	text-align: center;
+	background-image: url('http://blog.hostbaby.com/wp-content/uploads/2012/05/thumbnail_abstract.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.designtext{
+	text-align: center;
+	font-family: 'Bree Serif', serif;
+	font-size: 2.5rem; 
+	border: 0.5rem solid red;
+	/*background-color: black;*/
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+header{
+	font-family: 'Bree Serif', serif;
+	font-size: 2.5rem; 
+	border: 0.5rem solid red;
+	position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -30%);
+  color: white;
+  text-align: center;
+  text-shadow: 0 1px 0 #ccc, 
+               0 2px 0 #c9c9c9,
+              /* 0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,*/
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
+}
+/* NO USE
+.abbg{
+	background-image: url("../img/img2.jpg");
+  background-position: center;
+  background-size: cover;
+  width: auto;
+    height: 500px;
+    background-repeat: no-repeat;
+}*/
+/*Icons */
+/* .material-icons { font-size: 48px; } */
+
+/*
+Some thing for About US Here Starts...
+*/
+
+.pos{
+	width: auto;
+	height: 300px;
+}
+.getknow{
+	/*background-image: url('../img/getknow.jpg');*/
+	text-align: center;
+	background-size: cover;
+	width: auto;
+	height:auto;
+}
+
+hr.fancy-line { 
+    border: 3px orange solid; 
+}
+hr.fancy-line-2 { 
+    border: 3px black solid; 
+}
+hr.fancy-line-3 {
+  /*visibility: ;*/
+  margin-bottom: 20px;
+  width: 100%;
+  border: 0;
+  height: 2px;
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
+}
+
+ .cards{
+ 	background: white/*#3fc0e7*/;
+    border-radius: 10px;
+    float: left;
+    padding: 20px 15px;
+    width: 100%;
+    margin: 35px 0 0;
+ }
+ .cardsbody{
+ 	color: #000;
+ 	/*background-color: #ff6600;*/
+ 	border-radius: 10px;
+    float: left;
+    padding: 20px 15px;
+    width: 100%;
+    margin: 35px 0 0;
+
+ }
+.corn{
+	border: 1px solid black;
+	border-radius: 80px;
+
+}
+#rm{
+  display: none;
+}
+#rm2{
+  display: none;
+}
+#rm3{
+  display: none;
+}
+
+/*
+About US ENDS Here...*/
+
+/*Past Events Starts Here*/
+
+.count-title {
+	color: black;
+    font-size: 40px;
+    font-weight: normal;
+    margin-top: 10px;
+    margin-bottom: 0;
+    text-align: center;
+}
+.centeralign{
+  text-align: center;
+  align-items: center;
+}
+#hideimg{
+  position: cover;
+  width: 95%;
+  height: 300px;
+  align-items: center;
+}
+@media (max-width:992px) {
+  #hideimg {
+    display: none;
+  }
+} 
+/*.anime{
+border: 3px solid purple;
+display: inline;
+}*/
+/*
+
+
+/*PAst Events END HERE*/
+
+/* NEW EVENTS CREATE STARTS HERE*/
+.formstyle{
+  color: #ccc;
+  text-align: left;
+}
+.LabelText{
+  margin-left: 30px;
+}
+
+.newCard{
+  width:auto;
+  box-shadow: 0px 8px 60px -10px rgba(13,28,39,0.6);
+  background: #fff;
+  border-radius: 12px;
+  border: cyan solid 2px;
+  color: #000;
+  
+}
+.cardName{
+  text-align: center;
+    padding: 0 20px;
+    padding-bottom: 40px;
+}
+.setpd{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.eventphoto{
+  width: 100%;
+  height:300px;
+  border: #000 1px solid;
+  margin: 5px;
+
+  
+}
+/* NEW EVENTS END HERE*/
+
+
+.bacpic {
+  /*background-image: url("../img/img5.jpg");*/
+  background-position: center;
+  background-size: cover;
+  width: auto;
+    height: 500px;
+  /*background-repeat: no-repeat;
+  
+   position: relative;
+  z-index: 1;
+  background-color: transparent;*/
+}
+.adjprop {
+  position: relative;
+  z-index: 1;
+  background-color: transparent;
+}
+ .custCap{
+	border:9px solid #f2ae72;
+	border-radius: 0.5rem;
+	font-family: georgia;
+	font-size: 2rem;
+	font-weight: bold;
+	background-color: #000;
+	box-shadow:
+  0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+  0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+  0 12.5px 10px rgba(0, 0, 0, 0.06),
+  0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+  0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+  0 100px 80px rgba(0, 0, 0, 0.12);
+
+}
+
+.custom-border{
+	border:3px solid #f2ae72;
+	border-radius: 0.5rem;
+	font-family: georgia;
+	font-size: 1.2rem;
+	box-shadow:
+  0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+  0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+  0 12.5px 10px rgba(0, 0, 0, 0.06),
+  0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+  0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+  0 100px 80px rgba(0, 0, 0, 0.12)
+}
+.service_part {
+  padding: 28px 0px 140px;
+  font-family: 'Bree Serif', serif;
+  color: white;
+}
+
+@media (max-width: 991px) {
+  /* line 2, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_service.scss */
+  .service_part {
+    padding: 110px 0px 70px;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  /* line 2, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_service.scss */
+  .service_part {
+    padding: 200px 0px 80px;
+  }
+}
+
+/* line 13, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_service.scss */
+.service_part .mt_60 {
+  margin-top: 60px;
+}
+
+@media (max-width: 991px) {
+  /* line 17, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_service.scss */
+  .service_part .service_text {
+    margin-top: 25px;
+  }
+}
+
+/* line 24, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_service.scss */
+.service_part .service_text h2 {
+  font-size: 36px;
+  margin-bottom: 34px;
+  font-weight: 700;
+  line-height: 46px;
+}
+
+/* line 30, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_service.scss */
+.service_part .service_text h2 span {
+  color: #8d00ff;
+}
+
+@media (max-width: 991px) {
+  /* line 24, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_service.scss */
+  .service_part .service_text h2 {
+    font-size: 25px;
+    margin-bottom: 15px;
+    line-height: 35px;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  /* line 24, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_service.scss */
+  .service_part .service_text h2 {
+    font-size: 31px;
+    margin: 20px 0 15px;
+  }
+}
+
+/* line 45, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_service.scss */
+.service_part .service_text h2 span {
+  font-weight: 400;
+}
+
+/* line 51, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_service.scss */
+.service_part .service_text p {
+  margin-bottom: 15px;
+}
+
+/* line 55, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_service.scss */
+.service_part .service_text .btn_3 {
+  margin-top: 45px;
+}
+
+@media (max-width: 991px) {
+  /* line 55, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_service.scss */
+  .service_part .service_text .btn_3 {
+    margin-top: 10px;
+  }
+}
+
+.service_part .service_text .btn_3 {
+  margin-top: 45px;
+}
+
+@media (max-width: 991px) {
+  /* line 55, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_service.scss */
+  .service_part .service_text .btn_3 {
+    margin-top: 10px;
+  }
+}
+
+/* line 67, ../../01 cl html template/03_jun 2019/183_Charity_html/sass/_service.scss */
+.service_part .single_service_text {
+  padding: 30px;
+  margin-top: 30px;
+  background-color: #fafafa;
+  position: relative;
+  border-bottom-right-radius: 50px;
+  border-top-left-radius: 50px;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  color: black;
+}
+
+
+.btn_3 {
+	font-family: segoe ui;
+  display: inline-block;
+  padding: 13.5px 0;
+  width: 160px;
+  text-align: center;
+  font-size: 16px;
+  color: black;
+  font-weight: bold;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+  text-transform: uppercase;
+  border: 5px solid #8d00ff;
+  border-radius: 2px;
+  border-bottom-right-radius: 20px;
+  border-top-left-radius: 20px;
+  background-size: 200% auto;
+  background-color: #f49351;
+}
+
+hr{
+	border: white 5px solid;
+}
+
+.social_icon{
+	background-color: #eee;
+  color: #E92B26; 
+	/*margin-right: 15px;
+	margin-left: 10px;*/
+}
+.devtext{
+	font-family: 'Bree Serif', serif;
+  color: white;
+  border:2px solid #f2ae72;
+	border-radius: 0.8rem;
+	font-size: 1.2rem;
+	display: inline;
+}
+
+/* Image Gallary Class*/
+.gallimg{
+  width: 100%;
+}
+.gall{
+  border: 1px solid black;
+	height: 100px;
+}
+

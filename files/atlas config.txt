@@ -1,0 +1,9 @@
+mongoDb Atlas IP
+49.35.26.224
+
+username:
+devenmore
+
+password:
+ranjanamore18
+TPiN4All#Atlas

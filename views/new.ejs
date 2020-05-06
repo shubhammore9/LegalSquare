@@ -1,0 +1,67 @@
+<%- include('partials/header') %>
+
+<div class="container setfont" > 
+    <div style="text-align: center; color: chartreuse" class="">
+            <h2> New Event Form </h2>
+            <hr class="fancy-line-3">
+    </div>
+    <form action="/event" method="POST" class="formstyle" >
+        <center>
+        <div class="form-group " >
+            <label class="col-md-8 control-label ml-5" style="text-align: left;">Event Name</label>
+            <div class="col-md-8 inputGroupContainer">
+               <div class="input-group" >
+                   <span class="input-group-addon">
+                       <span class="material-icons mr-2 mr-2" style="font-size:34px;">title</span>
+                    </span>
+                    <input id="fullName" name="eventsList[name]" placeholder="Event Name (e.g. Blood Donation Camp)" class="form-control" required="true"  type="text">
+                </div>
+            </div>
+         </div> 
+         <div class="form-group ">
+            <label class="col-md-8 control-label ml-5" style="text-align: left;">Event Date</label>
+            <div class="col-md-8 inputGroupContainer">
+               <div class="input-group" ><span class="input-group-addon">
+                   <span class="material-icons mr-2 mr2" style="font-size:34px;">event</span>
+                </span>
+                <input id="date" name="eventsList[date]"  class="form-control" required="true" type="date" ></div>
+            </div>
+         </div>
+         <div class="form-group ">
+            <label class="col-md-8 control-label ml-5" style="text-align:left;">Place of Event</label>
+            <div class="col-md-8 inputGroupContainer">
+               <div class="input-group" ><span class="input-group-addon"><span class="material-icons mr-2" style="font-size:34px;">location_on</span></span><input id="addressLine2" name="eventsList[place]" placeholder="Amravati, Maharashtra, India" class="form-control" required="true"  type="text"></div>
+            </div>
+         </div>
+         <div class="form-group ">
+            <label class="col-md-8 control-label ml-5" style="text-align: left;">Image Address</label>
+            <div class="col-md-8 inputGroupContainer">
+               <div class="input-group" ><span class="input-group-addon"><span class="material-icons mr-2" style="font-size:34px;">insert_photo</span></span><input id="city" name="eventsList[photo]" placeholder="Image URL" class="form-control"   type="text"></div>
+            </div>
+         </div>
+         <div class="form-group ">
+            <label class="col-md-8 control-label ml-5" style="text-align: left;">Enter Description of Event</label>
+            <div class="col-md-8 inputGroupContainer">
+               <div class="input-group" ><span class="input-group-addon"><span class="material-icons mr-2" style="font-size:34px;">description</span></span><textarea  name="eventsList[description]" placeholder="What is Event? How is going to be conducted?" class="form-control" required="true"></textarea> </div>
+            </div>
+         </div>
+         <div class="form-group ">
+            <label class="col-md-8  control-label ml-5" style="text-align: left;">Contact Details</label>
+            <div class="col-md-8 inputGroupContainer">
+               <div class="input-group" ><span class="input-group-addon"><span class="material-icons mr-2" style="font-size:34px;">add_ic_call</span></span><input id="postcode" name="eventsList[contact]" placeholder="phone/Email" class="form-control" required="true"  type="text"></div>
+            </div>
+         </div>
+        <!--lk-->
+        <!-- <input type="text" name="eventsList[name]" placeholder="Name of Event">
+        <input type="date" name="eventList[date]" >
+        <input type="text" name="eventList[place]" placeholder="Place of Event">
+        <input type="text" name="eventList[phot]" placeholder="Address of image">
+        <textarea name="eventsList[description]" placeholder="Enter Description of Event"></textarea>
+        <input type="text" name="eventList[contact]" placeholder="Contact Details">   
+         -->
+         <button type="submit" class="btn btn-primary mb-2">Create New Event</button>
+        </center>
+    </form> 
+</div>
+
+<%- include('partials/footer') %>

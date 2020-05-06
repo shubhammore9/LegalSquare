@@ -1,0 +1,24 @@
+<%- include('partials/header')%>
+<div class="container setfont">
+    <div style="text-align: center; color: chartreuse" class="">
+        <h2> Joined Members List </h2>
+        <p style="color: red; font-family:serif;">Please Note some information maybe not available or maybe in garbage form due to
+        misuse of someone! As currently we have not added OTP based authentication! Ignore It. </p>
+        <hr class="fancy-line-3">
+    </div>
+    <% userlist.forEach(function(userlist){ %>
+        <div class="card newCard mb-3" >
+            <div class="card-body pt-1 pb-1 pl-1 pr-1">
+                <ul class="list-group list-group-flush ">
+                    <li class="list-group-item setpd"><span class="material-icons mr-2" style="font-size:24px;">person</span><%= userlist.name%></li>
+                    <li class="list-group-item setpd"><span class="material-icons mr-2" style="font-size:24px;">person_add</span><%= userlist.username%></li>
+                    <li class="list-group-item setpd"><span class="material-icons mr-2" style="font-size:24px;">location_on</span><%=userlist.location%></li>
+                    <li class="list-group-item setpd"><span class="material-icons mr-2">email</span><%= userlist.email%>...</li> 
+                    <li class="list-group-item setpd"><span class="material-icons mr-2" style="font-size:24px;">add_ic_call</span><%= userlist.mobile%></li>
+                </ul>  
+            </div>
+        </div>
+    <% })%>
+  
+</div>
+<%- include('partials/footer')%>

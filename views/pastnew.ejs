@@ -1,0 +1,65 @@
+<%- include('partials/header') %>
+
+<div class="container setfont" > 
+    <div style="text-align: center; color: chartreuse" class="">
+            <h2> Past Event Addition Form </h2>
+            <hr class="fancy-line-3">
+    </div>
+    <form action="/pastevents" method="POST" class="formstyle" >
+        <center>
+        <div class="form-group " >
+            <label class="col-md-8 control-label ml-5" style="text-align: left;">Event Name</label>
+            <div class="col-md-8 inputGroupContainer">
+               <div class="input-group" >
+                   <span class="input-group-addon">
+                       <span class="material-icons mr-2 mr-2" style="font-size:34px;">title</span>
+                    </span>
+                    <input id="fullName" name="pastlist[name]" placeholder="Event Name (e.g. Blood Donation Camp)" class="form-control" required="true"  type="text">
+                </div>
+            </div>
+         </div> 
+         <div class="form-group ">
+            <label class="col-md-8 control-label ml-5" style="text-align: left;">Event Date</label>
+            <div class="col-md-8 inputGroupContainer">
+               <div class="input-group" ><span class="input-group-addon">
+                   <span class="material-icons mr-2 mr2" style="font-size:34px;">event</span>
+                </span>
+                <input id="date" name="pastlist[date]"  class="form-control" required="true" type="date" ></div>
+            </div>
+         </div>
+         <div class="form-group ">
+            <label class="col-md-8 control-label ml-5" style="text-align:left;">Place of Event</label>
+            <div class="col-md-8 inputGroupContainer">
+               <div class="input-group" ><span class="input-group-addon"><span class="material-icons mr-2" style="font-size:34px;">location_on</span></span><input id="addressLine2" name="pastlist[place]" placeholder="Amravati, Maharashtra, India" class="form-control" required="true"  type="text"></div>
+            </div>
+         </div>
+         <div class="form-group ">
+            <label class="col-md-8 control-label ml-5" style="text-align: left;">Image Address</label>
+            <div class="col-md-8 inputGroupContainer">
+               <div class="input-group" ><span class="input-group-addon"><span class="material-icons mr-2" style="font-size:34px;">insert_photo</span></span><input id="city" name="pastlist[photo]" placeholder="Image URL" class="form-control"   type="text"></div>
+            </div>
+         </div>
+         <div class="form-group ">
+            <label class="col-md-8 control-label ml-5" style="text-align: left;">Enter Purpose of Event</label>
+            <div class="col-md-8 inputGroupContainer">
+               <div class="input-group" ><span class="input-group-addon"><span class="material-icons mr-2" style="font-size:34px;">description</span></span><textarea  name="pastlist[purpose]" placeholder="Why..???" class="form-control" required="true"></textarea> </div>
+            </div>
+         </div>
+         <div class="form-group ">
+            <label class="col-md-8  control-label ml-5" style="text-align: left;">Format of Event</label>
+            <div class="col-md-8 inputGroupContainer">
+               <div class="input-group" ><span class="input-group-addon"><span class="material-icons mr-2" style="font-size:34px;">format_align_justify</span></span><input name="pastlist[format]" placeholder="How.???" class="form-control" required="true"  type="text"></div>
+            </div>
+         </div>
+         <div class="form-group ">
+            <label class="col-md-8  control-label ml-5" style="text-align: left;">Outcome of Event</label>
+            <div class="col-md-8 inputGroupContainer">
+               <div class="input-group" ><span class="input-group-addon"><span class="material-icons mr-2" style="font-size:34px;">emoji_events</span></span><input name="pastlist[result]" placeholder="Results...??" class="form-control" required="true"  type="text"></div>
+            </div>
+         </div>
+         <button type="submit" class="btn btn-primary mb-2">Add New Past Event</button>
+        </center>
+    </form> 
+</div>
+
+<%- include('partials/footer') %>

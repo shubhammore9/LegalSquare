@@ -1,0 +1,23 @@
+<%- include('partials/header') %>
+<div class="container setfont" > 
+    <div style="text-align: center; color: chartreuse" class="">
+            <h2> <%= foundEvent.name %> </h2>
+            <hr class="fancy-line-3">
+    </div>
+    <%  var getdate= new Date(foundEvent.date).toDateString(); %>
+    <div class="card newCard mb-2" >
+        <div class="card-header " style="font-size: 1.2rem;">Event Created By: <%=foundEvent.createdBy%>  </div>
+        <div class="card-body ">
+            <% if(foundEvent.photo) { %>  <img class="eventphoto" src="<%=foundEvent.photo%>"> 
+            <% } else { %><img class="eventphoto" src="/stimg/logoT.jpg"> <% }%>
+            <ul class="list-group list-group-flush ">
+                <li class="list-group-item setpd"><span class="material-icons mr-2" style="font-size:24px;">event</span><%= getdate%></li>
+                <li class="list-group-item setpd"><span class="material-icons mr-2" style="font-size:24px;">location_on</span><%=foundEvent.place%></li>
+                <li class="list-group-item setpd text-justify"><span class="material-icons mr-2">description</span><%= foundEvent.description%></li> 
+                <li class="list-group-item setpd"><span class="material-icons mr-2" style="font-size:24px;">add_ic_call</span><%= foundEvent.contact%></li>
+            </ul>
+                 
+        </div>
+    </div>
+</div>
+<%- include('partials/footer') %>

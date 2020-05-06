@@ -1,0 +1,42 @@
+<%- include('partials/header') %>
+
+
+<div class="container setfont">
+    <a type="submit" href="/event/new" class="btn btn-block  mb-2" 
+    style=" font-size: 1.5rem; color: whitesmoke; border: 3px solid #00d7c3;border-radius: 50px;">
+    <span class="material-icons  ">add_box</span>Create New Event</a>
+    <div style="text-align: center; color: chartreuse" class="mt-5">  
+        <h2> Upcoming Events </h2>
+        <hr class="fancy-line-3">
+    </div>
+</div>
+<!-- <% eventsList.forEach(function(event){ %>
+    <div>
+        <h2><%=event.name%></h2>
+        <p><%=event.description%></p>
+        <a href="/event/<%=event._id%>"> Read more</a>
+    </div>
+<% })%> -->
+
+<div class="container setfont " style="color: black;">
+        <% eventsList.forEach(function(eventsList){ %>
+            <%  var getdate= new Date(eventsList.date).toDateString(); 
+                var getdesc= new String(eventsList.description).substring(0,100);%> 
+    <div class="card newCard mb-5" >
+        <div class="card-header " style="font-size: 1.2rem;"><%=eventsList.name%>  </div>
+        <div class="card-body pt-1 pb-1 pl-1 pr-1">
+            <ul class="list-group list-group-flush ">
+                <li class="list-group-item setpd"><span class="material-icons mr-2" style="font-size:24px;">event</span><%= getdate%></li>
+                <li class="list-group-item setpd"><span class="material-icons mr-2" style="font-size:24px;">location_on</span><%=eventsList.place%></li>
+                <li class="list-group-item setpd"><span class="material-icons mr-2">description</span><%= getdesc%>...</li> 
+                <li class="list-group-item setpd"><span class="material-icons mr-2" style="font-size:24px;">add_ic_call</span><%= eventsList.contact%></li>
+            </ul>
+                <div class="pt-2 pb-1">
+                    <center><a href="/event/<%=eventsList._id%>"><button class="btn-primary">Read More</button></a></center>
+                </div>   
+        </div>
+    </div>
+    <% })%>
+        
+</div>
+<%- include('partials/footer') %>
